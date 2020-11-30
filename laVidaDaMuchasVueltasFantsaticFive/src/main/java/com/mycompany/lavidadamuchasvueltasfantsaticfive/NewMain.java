@@ -5,8 +5,6 @@
  */
 package com.mycompany.lavidadamuchasvueltasfantsaticfive;
 
-import java.util.Random;
-
 /**
  *
  * @author sergi
