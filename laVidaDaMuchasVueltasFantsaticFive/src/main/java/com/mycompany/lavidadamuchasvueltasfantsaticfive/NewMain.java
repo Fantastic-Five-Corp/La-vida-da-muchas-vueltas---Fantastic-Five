@@ -16,16 +16,31 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String nombreyo = NewMain.nombreAleatorio();
-        System.out.println(nombreyo);
+        String generoYo = NewMain.generoAleatorio();
+        System.out.println(generoYo);
+        String nombreYo = NewMain.nombreAleatorio(generoYo);
+        System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
         String apellidosyo = NewMain.apellidoAleatorio();
         System.out.println(apellidosyo);
     }
 
-    public static String nombreAleatorio() {
+    public static String generoAleatorio() {
         java.util.Random aleatorio = new java.util.Random();
-        String nombres[] = {"Carlos", "Francisco", "Jose"};
-        String nombreSeleccionado = nombres[aleatorio.nextInt(nombres.length)];
+        String genero = aleatorio.nextBoolean() ? "Mujer" : "Hombre"; //mujer es un 1
+        return genero;
+    }
+
+    public static String nombreAleatorio(String genero) {
+
+        java.util.Random aleatorio = new java.util.Random();
+        String nombreSeleccionado = "";
+        if (genero.equals("Hombre")) {
+            String nombresHombre[] = {"Juan", "Pepe", "Luís"};
+            nombreSeleccionado = nombresHombre[aleatorio.nextInt(nombresHombre.length)];
+        } else {
+            String nombresMujer[] = {"Ana", "María", "Manoli"};
+            nombreSeleccionado = nombresMujer[aleatorio.nextInt(nombresMujer.length)];
+        }
         return nombreSeleccionado;
     }
 
