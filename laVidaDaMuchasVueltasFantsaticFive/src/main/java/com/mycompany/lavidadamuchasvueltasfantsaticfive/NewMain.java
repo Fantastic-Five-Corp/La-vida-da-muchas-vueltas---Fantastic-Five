@@ -18,12 +18,19 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+<<<<<<< Updated upstream
         String []nombreyo=NewMain.nombreAleatorio();
         System.out.println(nombreyo);
         String[] apellidosyo=NewMain.apellidoAleatorio();
         System.out.println(apellidosyo);
         String[] generoyo=NewMain.generoAleatorio();
         System.out.println(generoyo);
+=======
+        
+        String[] apellidoYo=NewMain.apellidoAleatorio();
+        System.out.println(apellidoYo);
+        
+>>>>>>> Stashed changes
         //probando si los comentarios también hacen push hola que tal todo bien DEP Maradona
         // a mí me va bien se actualizan los cambios de netbeans y tal 
      
@@ -38,7 +45,7 @@ public class NewMain {
 public static String[] apellidoAleatorio(){       
             java.util.Random aleatorio = new java.util.Random();
             String apellido[]={"Gómez","Martínez","Rodríguez"};              
-            System.out.println(" "+apellido[aleatorio.nextInt(apellido.length)]);
+            System.out.println(apellido[aleatorio.nextInt(apellido.length)]);
 
             
             
