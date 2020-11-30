@@ -37,7 +37,7 @@ public class NewMain {
         java.util.Random aleatorio = new java.util.Random();
         String nombreSeleccionado = "";
         if (genero.equals("Hombre")) {
-            String nombresHombre[] = {"Juan", "Pepe", "Luís"};
+            String nombresHombre[] = {"Juan", "Carlos", "Luís"};
             nombreSeleccionado = nombresHombre[aleatorio.nextInt(nombresHombre.length)];
         } else {
             String nombresMujer[] = {"Ana", "María", "Manoli"};
