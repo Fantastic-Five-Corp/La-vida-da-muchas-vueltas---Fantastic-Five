@@ -22,6 +22,7 @@ public class NewMain {
         System.out.println("Va esta puta mierda ya o qué cojones pasa");
         System.out.println("Soy Fernando");
         //probando si los comentarios también hacen push hola que tal todo bien DEP Maradona
+        // a mí me va bien se actualizan los cambios de netbeans y tal 
 
     }
 
