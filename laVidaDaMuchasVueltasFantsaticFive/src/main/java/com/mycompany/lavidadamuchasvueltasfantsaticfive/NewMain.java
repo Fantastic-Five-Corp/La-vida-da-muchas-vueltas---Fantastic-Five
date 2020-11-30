@@ -16,12 +16,19 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+<<<<<<< HEAD
         String generoYo = NewMain.generoAleatorio();
         System.out.println(generoYo);
         String nombreYo = NewMain.nombreAleatorio(generoYo);
         System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
         String apellidosyo = NewMain.apellidoAleatorio();
         System.out.println(apellidosyo);
+=======
+        String nombreYo = NewMain.nombreAleatorio();
+        System.out.println(nombreYo);
+        String apellidosYo = NewMain.apellidoAleatorio();
+        System.out.println(apellidosYo);
+>>>>>>> 67b3c9abf8f7bc1c74f67cc2b1bcf6051dd0a9c4
     }
 
     public static String generoAleatorio() {
