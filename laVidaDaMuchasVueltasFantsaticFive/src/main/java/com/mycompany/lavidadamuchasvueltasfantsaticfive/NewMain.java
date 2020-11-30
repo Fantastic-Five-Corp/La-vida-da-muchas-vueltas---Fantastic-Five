@@ -20,7 +20,7 @@ public class NewMain {
         // TODO code application logic here
         String []nombreyo=NewMain.nombreAleatorio();
         System.out.println(nombreyo);
-        String[] apellidosyo=NewMain.apellidoAleatorio();
+        String apellidosyo=NewMain.apellidoAleatorio();
         System.out.println(apellidosyo);
         
         //probando si los comentarios también hacen push hola que tal todo bien DEP Maradona
@@ -34,15 +34,15 @@ public class NewMain {
         System.out.println(" "+nombre[aleatorio.nextInt(nombre.length)]);
         return nombre;
     }
-public static String[] apellidoAleatorio(){       
+public static String apellidoAleatorio(){       
             java.util.Random aleatorio = new java.util.Random();
-            String apellido[]={"Gómez","Martínez","Rodríguez"};              
-            System.out.println(" "+apellido[aleatorio.nextInt(apellido.length)]);
+            String apellidos[]={"Gómez","Martínez","Rodríguez"};              
+            String apellidoSeleccionado = apellidos[aleatorio.nextInt(apellidos.length)];
 
             
             
             
-            return apellido; 
+            return apellidoSeleccionado; 
 }
 
 
