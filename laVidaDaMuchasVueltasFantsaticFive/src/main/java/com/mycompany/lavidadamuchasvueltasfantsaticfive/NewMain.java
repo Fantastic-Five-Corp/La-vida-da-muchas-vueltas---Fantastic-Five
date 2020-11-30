@@ -18,7 +18,8 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    
+        String []nombreyo=NewMain.nombreAleatorio();
+        System.out.println(nombreyo);
         String[] apellidosyo=NewMain.apellidoAleatorio();
         System.out.println(apellidosyo);
         
@@ -27,6 +28,12 @@ public class NewMain {
      
       
 }
+    public static String [] nombreAleatorio(){
+       java.util.Random aleatorio= new java.util.Random();
+       String nombre[]={"Carlos","Francisco","Jose"};
+        System.out.println(" "+nombre[aleatorio.nextInt(nombre.length)]);
+        return nombre;
+    }
 public static String[] apellidoAleatorio(){       
             java.util.Random aleatorio = new java.util.Random();
             String apellido[]={"Gómez","Martínez","Rodríguez"};              
