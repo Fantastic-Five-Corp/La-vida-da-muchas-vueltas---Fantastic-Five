@@ -19,7 +19,7 @@ public class NewMain {
         System.out.println("cua");
         System.out.println("soyjesus");
         System.out.println("soyCandido");
-
+        System.out.println("Va esta puta mierda ya o qué cojones pasa");
 
     }
 
