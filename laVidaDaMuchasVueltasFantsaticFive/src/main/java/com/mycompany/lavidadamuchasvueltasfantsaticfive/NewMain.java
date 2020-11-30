@@ -16,10 +16,10 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String nombreyo = NewMain.nombreAleatorio();
-        System.out.println(nombreyo);
-        String apellidosyo = NewMain.apellidoAleatorio();
-        System.out.println(apellidosyo);
+        String nombreYo = NewMain.nombreAleatorio();
+        System.out.println(nombreYo);
+        String apellidosYo = NewMain.apellidoAleatorio();
+        System.out.println(apellidosYo);
     }
 
     public static String nombreAleatorio() {
