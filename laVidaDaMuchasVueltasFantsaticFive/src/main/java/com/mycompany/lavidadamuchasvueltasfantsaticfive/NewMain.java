@@ -22,7 +22,8 @@ public class NewMain {
         System.out.println(nombreyo);
         String[] apellidosyo=NewMain.apellidoAleatorio();
         System.out.println(apellidosyo);
-        
+        String[] generoyo=NewMain.generoAleatorio();
+        System.out.println(generoyo);
         //probando si los comentarios también hacen push hola que tal todo bien DEP Maradona
         // a mí me va bien se actualizan los cambios de netbeans y tal 
      
@@ -44,7 +45,12 @@ public static String[] apellidoAleatorio(){
             
             return apellido; 
 }
-
+    public static String[] generoAleatorio(){
+    java.util.Random aleatorio = new java.util.Random();
+    String genero[]={"Hombre","Mujer"};
+        System.out.println(" "+genero[aleatorio.nextInt(genero.length)]);
+    return genero; 
+    }
 
 
 }
