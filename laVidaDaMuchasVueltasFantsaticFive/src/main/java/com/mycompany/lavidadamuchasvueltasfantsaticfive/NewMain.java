@@ -1,4 +1,4 @@
-/*
+9/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -21,6 +21,15 @@ public class NewMain {
         System.out.println("soyCandido");
         System.out.println("Va esta puta mierda ya o qué cojones pasa");
         System.out.println("Soy Fernando");
+        System.out.println("lkjasfkjlfdskljdfs");
+                
+        
+        System.out.println("Si le das a guardar te sale el commit");
+        System.out.println("cerdos");
+        System.out.println("A mí me funciona dandome error raro dentro del archivo");
+        System.out.println("hola");
+        
+        
         //probando si los comentarios también hacen push hola que tal todo bien DEP Maradona
         // a mí me va bien se actualizan los cambios de netbeans y tal 
 
