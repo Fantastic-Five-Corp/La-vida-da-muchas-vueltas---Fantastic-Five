@@ -25,7 +25,7 @@ public class FuncionesPersona {
             String nombresHombre[] = {"Juan", "Carlos", "Luís", "Fernando", "Sergio", "Cándido","Germán", "Jesús", "Miguel", "Diego Armando"};
             nombreSeleccionado = nombresHombre[aleatorio.nextInt(nombresHombre.length)];
         } else {
-            String nombresMujer[] = {"Ana", "María", "Manoli", "Rosalía", "Isabel", "Marie", "Jennifer", "Teresa"};
+            String nombresMujer[] = {"Ana", "María", "Manoli", "Rosalía", "Isabel", "Marie", "Jennifer","Teresa","Martirio", "Amelie" };
             nombreSeleccionado = nombresMujer[aleatorio.nextInt(nombresMujer.length)];
         }
         return nombreSeleccionado;
@@ -33,7 +33,7 @@ public class FuncionesPersona {
 
     public static String apellidoAleatorio() {
         java.util.Random aleatorio = new java.util.Random();
-        String apellidos[] = {"Gómez", "Martínez", "Rodríguez", "Felix", "Houellebecq", "Cervantes", "Turing", "Curie", "Zambrano"};
+        String apellidos[] = {"Gómez", "Martínez", "Rodríguez", "Felix", "Houellebecq", "Cervantes", "Turing", "Curie", "Zambrano", "Maradona", "Curie", "Pantoja", "Foster-Wallace", "Steinbeck" };
         String apellidoSeleccionado = apellidos[aleatorio.nextInt(apellidos.length)];
 
         return apellidoSeleccionado;
