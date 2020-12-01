@@ -22,10 +22,10 @@ public class FuncionesPersona {
         java.util.Random aleatorio = new java.util.Random();
         String nombreSeleccionado = "";
         if (genero.equals("Hombre")) {
-            String nombresHombre[] = {"Juan", "Carlos", "Luís"};
+            String nombresHombre[] = {"Juan", "Carlos", "Luís", "Fernando", "Sergio", "Cándido","Germán", "Jesús", "Miguel", "Diego Armando"};
             nombreSeleccionado = nombresHombre[aleatorio.nextInt(nombresHombre.length)];
         } else {
-            String nombresMujer[] = {"Ana", "María", "Manoli"};
+            String nombresMujer[] = {"Ana", "María", "Manoli", "Rosalía", "Isabel", "Marie", "Jennifer", "Teresa"};
             nombreSeleccionado = nombresMujer[aleatorio.nextInt(nombresMujer.length)];
         }
         return nombreSeleccionado;
@@ -33,7 +33,7 @@ public class FuncionesPersona {
 
     public static String apellidoAleatorio() {
         java.util.Random aleatorio = new java.util.Random();
-        String apellidos[] = {"Gómez", "Martínez", "Rodríguez"};
+        String apellidos[] = {"Gómez", "Martínez", "Rodríguez", "Felix", "Houellebecq", "Cervantes", "Turing", "Curie", "Zambrano"};
         String apellidoSeleccionado = apellidos[aleatorio.nextInt(apellidos.length)];
 
         return apellidoSeleccionado;
