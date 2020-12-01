@@ -7,7 +7,9 @@ package com.mycompany.lavidadamuchasvueltasfantsaticfive;
 
 /**
  *
- * @author sergi
+ * @author FantasticFive Corp
+ * @version 0.0.1
+ * 
  */
 public class NewMain {
 
@@ -16,41 +18,15 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic her
-        String generoYo = NewMain.generoAleatorio();
+        String generoYo = FuncionesPersona.generoAleatorio();
         System.out.println(generoYo);
-        String nombreYo = NewMain.nombreAleatorio(generoYo);
+        String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
         System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
-        String apellidosyo = NewMain.apellidoAleatorio();
+        String apellidosyo = FuncionesPersona.apellidoAleatorio();
         System.out.println(apellidosyo);
         
   
     }
 
-    public static String generoAleatorio() {
-        java.util.Random aleatorio = new java.util.Random();
-        String genero = aleatorio.nextBoolean() ? "Mujer" : "Hombre"; //mujer es un 1
-        return genero;
-    }
-
-    public static String nombreAleatorio(String genero) {
-
-        java.util.Random aleatorio = new java.util.Random();
-        String nombreSeleccionado = "";
-        if (genero.equals("Hombre")) {
-            String nombresHombre[] = {"Juan", "Carlos", "Luís"};
-            nombreSeleccionado = nombresHombre[aleatorio.nextInt(nombresHombre.length)];
-        } else {
-            String nombresMujer[] = {"Ana", "María", "Manoli"};
-            nombreSeleccionado = nombresMujer[aleatorio.nextInt(nombresMujer.length)];
-        }
-        return nombreSeleccionado;
-    }
-
-    public static String apellidoAleatorio() {
-        java.util.Random aleatorio = new java.util.Random();
-        String apellidos[] = {"Gómez", "Martínez", "Rodríguez"};
-        String apellidoSeleccionado = apellidos[aleatorio.nextInt(apellidos.length)];
-
-        return apellidoSeleccionado;
-    }
+    
 }
