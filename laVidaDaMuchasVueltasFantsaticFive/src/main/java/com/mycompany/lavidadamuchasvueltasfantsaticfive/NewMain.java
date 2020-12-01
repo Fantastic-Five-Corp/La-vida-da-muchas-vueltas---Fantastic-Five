@@ -22,8 +22,8 @@ public class NewMain {
         System.out.println(generoYo);
         String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
         System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
-        String apellidosyo = FuncionesPersona.apellidoAleatorio();
-        System.out.println(apellidosyo);
+        String apellidosYo = FuncionesPersona.apellidoAleatorio();
+        System.out.println(apellidosYo);
         
   
     }
