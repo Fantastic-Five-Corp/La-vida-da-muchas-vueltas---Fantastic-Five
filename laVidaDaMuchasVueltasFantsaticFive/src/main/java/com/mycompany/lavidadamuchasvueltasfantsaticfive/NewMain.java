@@ -8,6 +8,7 @@ package com.mycompany.lavidadamuchasvueltasfantsaticfive;
 /**
  *
  * @author FantasticFive Corp
+ * 
  * @version 0.0.1
  *
  */
@@ -28,6 +29,13 @@ public class NewMain {
             System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
             String apellidosYo = FuncionesPersona.apellidoAleatorio();
             System.out.println(apellidosYo);
+        String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
+        System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
+        String apellidosYo = FuncionesPersona.apellidoAleatorio();
+        System.out.println(apellidosYo);
+        
+  
+    }
 
         }
 

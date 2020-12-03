@@ -13,7 +13,8 @@ public class FuncionesPersona {
     
 public static Boolean generoAleatorio() {
         java.util.Random aleatorio = new java.util.Random();
-        boolean genero = aleatorio.nextBoolean ();
+        boolean genero = aleatorio.nextBoolean();
+        if (genero==true){System.out.println("Hombre");  } else {System.out.println("Mujer");}
         return genero;
     }
 
@@ -21,7 +22,7 @@ public static Boolean generoAleatorio() {
 
         java.util.Random aleatorio = new java.util.Random();
         String nombreSeleccionado = "";
-        if (genero=true) {
+        if (genero==true) {
             String nombresHombre[] = {"Juan", "Carlos", "Luís", "Fernando", "Sergio", "Cándido","Germán", "Jesús", "Miguel", "Diego Armando"};
             nombreSeleccionado = nombresHombre[aleatorio.nextInt(nombresHombre.length)];
         } else {
