@@ -9,7 +9,7 @@ package com.mycompany.lavidadamuchasvueltasfantsaticfive;
  *
  * @author FantasticFive Corp
  * @version 0.0.1
- *
+ * 
  */
 public class NewMain {
 
@@ -20,16 +20,16 @@ public class NewMain {
         // TODO code application logic her
         //String generoYo = FuncionesPersona.generoAleatorio();
         Boolean generoYo = FuncionesPersona.generoAleatorio();
-        if (generoYo = true) {
-            System.out.println("hombre");
+        if (generoYo=true){System.out.println("hombre");;
 
-            // System.out.println(generoYo);
-            String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
-            System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
-            String apellidosYo = FuncionesPersona.apellidoAleatorio();
-            System.out.println(apellidosYo);
-
-        }
-
+       // System.out.println(generoYo);
+        String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
+        System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
+        String apellidosYo = FuncionesPersona.apellidoAleatorio();
+        System.out.println(apellidosYo);
+        
+  
     }
+
+    
 }
