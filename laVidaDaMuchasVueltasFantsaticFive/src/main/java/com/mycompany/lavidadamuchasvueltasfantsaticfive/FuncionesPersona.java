@@ -7,7 +7,8 @@ package com.mycompany.lavidadamuchasvueltasfantsaticfive;
 
 /**
  *
- * @author CandidoV
+ * @author FantasticFive Corp
+ * 
  */
 public class FuncionesPersona {
     
