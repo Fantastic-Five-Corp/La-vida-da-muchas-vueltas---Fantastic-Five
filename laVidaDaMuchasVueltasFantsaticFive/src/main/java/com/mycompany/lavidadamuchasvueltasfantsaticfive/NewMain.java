@@ -20,7 +20,8 @@ public class NewMain {
         // TODO code application logic her
         //String generoYo = FuncionesPersona.generoAleatorio();
         Boolean generoYo = FuncionesPersona.generoAleatorio();
-        System.out.println(generoYo);
+       // if (generoYo==true){System.out.println("Hombre");  } else {System.out.println("Mujer");}
+        
 
        // System.out.println(generoYo);
         String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
