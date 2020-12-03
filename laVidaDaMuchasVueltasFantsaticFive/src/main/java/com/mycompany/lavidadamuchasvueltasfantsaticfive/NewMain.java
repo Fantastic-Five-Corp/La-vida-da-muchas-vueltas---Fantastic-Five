@@ -10,7 +10,7 @@ package com.mycompany.lavidadamuchasvueltasfantsaticfive;
  * @author FantasticFive Corp
  * 
  * @version 0.0.1
- * 
+ *
  */
 public class NewMain {
 
@@ -22,13 +22,13 @@ public class NewMain {
         //String generoYo = FuncionesPersona.generoAleatorio();
         Boolean generoYo = FuncionesPersona.generoAleatorio();
         if (generoYo==true){System.out.println("Hombre");  } else {System.out.println("Mujer");}
-        String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
-        System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
-        String apellidosYo = FuncionesPersona.apellidoAleatorio();
-        System.out.println(apellidosYo);
-        
-  
+            String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
+            System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
+            String apellidosYo = FuncionesPersona.apellidoAleatorio();
+            System.out.println(apellidosYo);
+
     }
 
-    
-}
+        }
+
+   
