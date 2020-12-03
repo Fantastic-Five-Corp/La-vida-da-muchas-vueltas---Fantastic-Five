@@ -11,17 +11,17 @@ package com.mycompany.lavidadamuchasvueltasfantsaticfive;
  */
 public class FuncionesPersona {
     
-    public static String generoAleatorio() {
+public static Boolean generoAleatorio() {
         java.util.Random aleatorio = new java.util.Random();
-        String genero = aleatorio.nextBoolean() ? "Mujer" : "Hombre"; //mujer es un 1
+        boolean genero = aleatorio.nextBoolean ();
         return genero;
     }
 
-    public static String nombreAleatorio(String genero) {
+    public static String nombreAleatorio(Boolean genero) {
 
         java.util.Random aleatorio = new java.util.Random();
         String nombreSeleccionado = "";
-        if (genero.equals("Hombre")) {
+        if (genero=true) {
             String nombresHombre[] = {"Juan", "Carlos", "Luís", "Fernando", "Sergio", "Cándido","Germán", "Jesús", "Miguel", "Diego Armando"};
             nombreSeleccionado = nombresHombre[aleatorio.nextInt(nombresHombre.length)];
         } else {
