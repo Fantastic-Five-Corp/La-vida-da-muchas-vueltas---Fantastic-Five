@@ -21,7 +21,7 @@ public class NewMain {
         // TODO code application logic her
         //String generoYo = FuncionesPersona.generoAleatorio();
         Boolean generoYo = FuncionesPersona.generoAleatorio();
-        if (generoYo==true){System.out.println("Hombre");  } else {System.out.println("Mujer");}
+        System.out.println(generoYo?"mi genero es masculino":"mi genero es femenino");
             String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
             System.out.println(nombreYo);                               //por lo que no necesariamente congeniaria con el nombre
             String apellidosYo = FuncionesPersona.apellidoAleatorio();
