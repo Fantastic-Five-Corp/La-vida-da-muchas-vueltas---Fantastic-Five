@@ -5,6 +5,8 @@
  */
 package com.mycompany.lavidadamuchasvueltasfantsaticfive;
 
+import java.util.Random;
+
 /**
  *
  * @author FantasticFive Corp
@@ -40,6 +42,53 @@ public static Boolean generoAleatorio() {
 
         return apellidoSeleccionado;
     }
+    
+    
+    public static int valorEstadisticaAleatorio(){
+    
+    Random aleatorio = new Random();
+    int numeroAleatorio=aleatorio.nextInt((101-0));
+    
+    return numeroAleatorio; 
+    }
+    
+     public static int valorEstadisticaAleatorio(int min){
+   
+    Random aleatorio = new Random();
+    int numeroAleatorio=aleatorio.nextInt((101-min)+min);
+    
+    return numeroAleatorio; 
+    
+    
+    }
+     
+     public static int valorEstadisticaAleatorio(int min, int max){
+   
+    Random aleatorio = new Random();
+    int numeroAleatorio=aleatorio.nextInt(max-min)+min;
+    
+    return numeroAleatorio; 
+    } 
+     
+     public static String ImprimePersona (String nombre, String apellidos, boolean genero, int sociabilidad, int empatia, int inteligencia, int velocidad,int fuerza){
+     
+         String persona = "";
+         
+         persona += (nombre + " " + apellidos + ((genero ? "(Hombre)":"(Mujer)")) + "\n");
+         persona += "----------------\n";
+         persona += ("Sociabilidad:" + sociabilidad +"\n");
+         persona += ("empatia: " + empatia+"\n");
+         persona += ("inteligencia: " + inteligencia+"\n");
+         persona += ("velocidad: " + velocidad+"\n");
+         persona += ("fuerza: " + fuerza+"\n");
+         
+         
+       
+        
+         return persona;
+         
+         
+     }
 }
     
     
