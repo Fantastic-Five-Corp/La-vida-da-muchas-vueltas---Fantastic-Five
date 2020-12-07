@@ -11,6 +11,13 @@ import java.util.Random;
  *
  * @author FantasticFive Corp
  * 
+ * @author Sergio Martínez Félix 
+ * @author Germán Pascual 
+ * @author Cándido Vidal 
+ * @author Fernando Claudio Moreno 
+ * 
+ * @version 0.0.2
+ * 
  */
 public class FuncionesPersona {
     
@@ -44,37 +51,29 @@ public static Boolean generoAleatorio() {
     }
     
     
-    public static int valorEstadisticaAleatorio(){
+     public static byte valorEstadisticaAleatorio(){
     
-    Random aleatorio = new Random();
-    int numeroAleatorio=aleatorio.nextInt((101-0));
-    
-    return numeroAleatorio; 
+     return (byte) (new Random().nextInt(101));
+            
     }
     
-     public static int valorEstadisticaAleatorio(int min){
-   
-    Random aleatorio = new Random();
-    int numeroAleatorio=aleatorio.nextInt((101-min)+min);
-    
-    return numeroAleatorio; 
-    
-    
+     public static byte  valorEstadisticaAleatorio(byte min){
+
+     return (byte) (new Random().nextInt((101-min)+min));
+
     }
      
-     public static int valorEstadisticaAleatorio(int min, int max){
-   
-    Random aleatorio = new Random();
-    int numeroAleatorio=aleatorio.nextInt(max-min)+min;
-    
-    return numeroAleatorio; 
+     public static byte valorEstadisticaAleatorio(byte min, byte max){
+ 
+     return (byte) (new Random().nextInt(max-min)+min);
+ 
     } 
      
      public static String ImprimePersona (String nombre, String apellidos, boolean genero, int sociabilidad, int empatia, int inteligencia, int velocidad,int fuerza){
      
          String persona = "";
          
-         persona += (nombre + " " + apellidos + ((genero ? "(Hombre)":"(Mujer)")) + "\n");
+         persona += (nombre + " " + apellidos + " " + ((genero ? "(Hombre)":"(Mujer)")) + "\n");
          persona += "----------------\n";
          persona += ("Sociabilidad:" + sociabilidad +"\n");
          persona += ("empatia: " + empatia+"\n");
@@ -82,13 +81,30 @@ public static Boolean generoAleatorio() {
          persona += ("velocidad: " + velocidad+"\n");
          persona += ("fuerza: " + fuerza+"\n");
          
-         
-       
-        
+    
          return persona;
-         
-         
+ 
      }
+     
+     public static String ImprimeHermano (String nombre, String apellidos, boolean genero, int sociabilidad, int empatia, int inteligencia, int velocidad,int fuerza){
+     
+         String hermano = "";
+         
+         hermano += (nombre + " " + apellidos + " " + ((genero ? "(Hombre)":"(Mujer)")) + "\n");
+         hermano += "----------------\n";
+         hermano += ("Sociabilidad:" + sociabilidad +"\n");
+         hermano += ("empatia: " + empatia+"\n");
+         hermano += ("inteligencia: " + inteligencia+"\n");
+         hermano += ("velocidad: " + velocidad+"\n");
+         hermano+= ("fuerza: " + fuerza+"\n");
+         
+    
+         return hermano;
+ 
+     }
+     
+     
+     
 }
     
     
