@@ -58,6 +58,12 @@ public class NewMain {
         byte sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
         byte inteligenciaMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
         byte velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
+        byte sociabilidadYo =FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)5);
+        byte empatiaYo =FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)5);
+        byte inteligenciaYo =FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)5);
+        byte velocidadYo =FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)5);
+        byte fuerzaYo =FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)5);
+        
         byte edadYo=0;
        
        
@@ -65,7 +71,7 @@ public class NewMain {
         
          java.util.Random aleatorio =new java.util.Random ();
          byte numHermanos = (byte)((byte) aleatorio.nextInt(4)+0);
-         System.out.println(numHermanos);
+   
         
     for (numHermanos=0; numHermanos <3; numHermanos++){
       
@@ -76,8 +82,9 @@ public class NewMain {
         byte sociabilidadHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte inteligenciaHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte velocidadMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
-        byte edadHermano1=0;
-        System.out.println(fuerzaMaxHermano1);
+        byte edadHermano1= FuncionesPersona.valorEstadisticaAleatorio((byte)0,(byte)30);
+        String apellidosHermano1 = apellidosPapa.substring(0, apellidosPapa.indexOf(" ")) + " " + apellidosMama.substring(0, apellidosMama.indexOf(" "));
+        String nombreHermano1= FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
         } 
           
          if(numHermanos==2){
@@ -86,8 +93,10 @@ public class NewMain {
         byte sociabilidadHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
         byte inteligenciaHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
         byte velocidadMaxHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
-        byte edadHermano2=0;
-        System.out.println(fuerzaMaxHermano2);
+        byte edadHermano2= FuncionesPersona.valorEstadisticaAleatorio((byte)0,(byte)30);
+        String apellidos2= apellidosPapa.substring(0, apellidosPapa.indexOf(" ")) + " " + apellidosMama.substring(0, apellidosMama.indexOf(" "));
+        String nombreHermano2= FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
+        
          }
           
         if (numHermanos==3){
@@ -96,8 +105,9 @@ public class NewMain {
         byte sociabilidadHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
         byte inteligenciaHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
         byte velocidadMaxHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
-        byte edadHermano3=0;
-        System.out.println(fuerzaMaxHermano3);
+        byte edadHermano3= FuncionesPersona.valorEstadisticaAleatorio((byte)0,(byte)30);
+        String apellidosHermano3 = apellidosPapa.substring(0, apellidosPapa.indexOf(" ")) + " " + apellidosMama.substring(0, apellidosMama.indexOf(" "));
+        String nombreHermano3= FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
         }
     }
       
@@ -115,9 +125,7 @@ public class NewMain {
         
         System.out.println(persona);
         
-         System.out.println(apellidosMama); 
-         System.out.println(apellidosPapa);
-         System.out.println(apellidosYo);
+       
          
            
 
