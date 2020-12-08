@@ -62,18 +62,20 @@ public class NewMain {
         
         Random hermanos = new Random();
         byte numHermanos = (byte) ((byte) hermanos.nextInt (4)+0);
+        System.out.println(numHermanos);
         
         
-      do{ 
+       
       if (numHermanos>2){
       if (numHermanos >= 1){
-      if (numHermanos==1){
+      if (numHermanos ==1){
         byte fuerzaMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte empatiaMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte sociabilidadHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte inteligenciaHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte velocidadMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte edadHermano1=0;
+          System.out.println(fuerzaMaxHermano1);
       }
     
         byte fuerzaMaxHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
@@ -82,6 +84,7 @@ public class NewMain {
         byte inteligenciaHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
         byte velocidadMaxHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
         byte edadHermano2=0;
+        System.out.println(fuerzaMaxHermano2);
       }
         byte fuerzaMaxHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
         byte empatiaMaxHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
@@ -89,9 +92,10 @@ public class NewMain {
         byte inteligenciaHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
         byte velocidadMaxHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
         byte edadHermano3=0;
+        System.out.println(fuerzaMaxHermano3);
         }
         
-       }while(numHermanos>0);
+       
        
         
         Boolean generoYo = FuncionesPersona.generoAleatorio();
