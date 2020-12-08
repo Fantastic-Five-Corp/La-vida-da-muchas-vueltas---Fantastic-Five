@@ -124,6 +124,7 @@ public class NewMain {
            
         
         System.out.println(persona);
+        System.out.println(numHermanos + "tienes estos hermanos");
         
        
          
