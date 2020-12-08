@@ -59,25 +59,28 @@ public class NewMain {
         byte inteligenciaMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
         byte velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
         byte edadYo=0;
-        
-        Random hermanos = new Random();
-        byte numHermanos = (byte) ((byte) hermanos.nextInt (4)+0);
-        System.out.println(numHermanos);
-        
-        
        
-      if (numHermanos>2){
-      if (numHermanos >= 1){
-      if (numHermanos ==1){
+       
+       
+        
+         java.util.Random aleatorio =new java.util.Random ();
+         byte numHermanos = (byte)((byte) aleatorio.nextInt(4)+0);
+         System.out.println(numHermanos);
+        
+    for (numHermanos=0; numHermanos <3; numHermanos++){
+      
+         
+        if (numHermanos==1){
         byte fuerzaMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte empatiaMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte sociabilidadHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte inteligenciaHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte velocidadMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
         byte edadHermano1=0;
-          System.out.println(fuerzaMaxHermano1);
-      }
-    
+        System.out.println(fuerzaMaxHermano1);
+        } 
+          
+         if(numHermanos==2){
         byte fuerzaMaxHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
         byte empatiaMaxHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
         byte sociabilidadHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
@@ -85,7 +88,9 @@ public class NewMain {
         byte velocidadMaxHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
         byte edadHermano2=0;
         System.out.println(fuerzaMaxHermano2);
-      }
+         }
+          
+        if (numHermanos==3){
         byte fuerzaMaxHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
         byte empatiaMaxHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
         byte sociabilidadHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
@@ -94,6 +99,9 @@ public class NewMain {
         byte edadHermano3=0;
         System.out.println(fuerzaMaxHermano3);
         }
+    }
+      
+      
         
        
        
