@@ -61,9 +61,6 @@ public class NewMain {
         
            String persona = FuncionesPersona.ImprimePersona(nombreYo, apellidosYo, generoYo, sociabilidadMaxYo, empatiaMaxYo, inteligenciaMaxYo, velocidadMaxYo, fuerzaMaxYo);
            System.out.println(persona);
-            
-           
+
 
     }
-
-        }
