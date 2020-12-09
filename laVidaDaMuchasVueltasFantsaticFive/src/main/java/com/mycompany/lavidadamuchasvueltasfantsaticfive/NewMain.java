@@ -79,7 +79,7 @@ public class NewMain {
         java.util.Random aleatorio = new java.util.Random();
         byte numHermanos = (byte) ((byte) aleatorio.nextInt(4) + 0);
 
-        for (numHermanos = 0; numHermanos < 3; numHermanos++) {
+        for (byte i = 0; i < numHermanos; i++) {
 
             if (numHermanos == 1) {
                 byte fuerzaMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
