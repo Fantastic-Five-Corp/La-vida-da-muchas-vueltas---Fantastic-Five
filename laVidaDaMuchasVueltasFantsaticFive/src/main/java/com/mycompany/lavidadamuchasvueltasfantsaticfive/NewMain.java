@@ -117,7 +117,8 @@ FuncionesPersona.valorEstadisticaAleatorio();
 FuncionesPersona.valorEstadisticaAleatorio();
  byte edadHermano2= FuncionesPersona.valorEstadisticaAleatorio((byte)0,
 (byte)30);
- String apellidos2= apellidosPapa.substring(0, apellidosPapa.indexOf("")) + " " + apellidosMama.substring(0, apellidosMama.indexOf(" "));
+ String apellidos2= apellidosPapa.substring(0, apellidosPapa.indexOf("
+")) + " " + apellidosMama.substring(0, apellidosMama.indexOf(" "));
  String nombreHermano2=
 FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
 
