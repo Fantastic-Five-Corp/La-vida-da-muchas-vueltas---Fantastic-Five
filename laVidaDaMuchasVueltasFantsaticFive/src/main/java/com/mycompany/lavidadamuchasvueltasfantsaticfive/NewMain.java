@@ -78,10 +78,11 @@ public class NewMain {
 
         java.util.Random aleatorio = new java.util.Random();
         byte numHermanos = (byte) ((byte) aleatorio.nextInt(4) + 0);
+        
 
-        for (byte i = 0; i < numHermanos; i++) {
+        for (byte i = 0; i < (numHermanos +1); i++) {
 
-            if (numHermanos == 1) {
+            if (i == 1) {
                 byte fuerzaMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte empatiaMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte sociabilidadHermano1
@@ -97,9 +98,10 @@ public class NewMain {
                         apellidosMama.indexOf(" "));
                 String nombreHermano1
                         = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
+                
             }
 
-            if (numHermanos == 2) {
+            if (i == 2) {
                 byte fuerzaMaxHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte empatiaMaxHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte sociabilidadHermano2
@@ -113,10 +115,10 @@ public class NewMain {
                 String apellidos2 = apellidosPapa.substring(0, apellidosPapa.indexOf("")) + " " + apellidosMama.substring(0, apellidosMama.indexOf(" "));
                 String nombreHermano2
                         = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
-
+                
             }
 
-            if (numHermanos == 3) {
+            if (i == 3) {
                 byte fuerzaMaxHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte empatiaMaxHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte sociabilidadHermano3
@@ -132,6 +134,8 @@ public class NewMain {
                         apellidosMama.indexOf(" "));
                 String nombreHermano3
                         = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
+                                
+
             }
         }
 
