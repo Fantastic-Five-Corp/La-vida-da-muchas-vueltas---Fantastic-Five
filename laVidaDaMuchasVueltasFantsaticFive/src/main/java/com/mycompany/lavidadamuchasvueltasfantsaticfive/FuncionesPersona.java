@@ -86,21 +86,6 @@ public class FuncionesPersona {
         return persona;
     }
 
-    public static String ImprimeHermano(String nombre, String apellidos,
-            boolean genero, int sociabilidad, int empatia, int inteligencia, int velocidad, int fuerza) {
-
-        String hermano = "";
-
-        hermano += (nombre + " " + apellidos + " " + ((genero
-                ? "(Hombre)" : "(Mujer)")) + "\n");
-        hermano += "----------------\n";
-        hermano += ("Sociabilidad:" + sociabilidad + "\n");
-        hermano += ("empatia: " + empatia + "\n");
-        hermano += ("inteligencia: " + inteligencia + "\n");
-        hermano += ("velocidad: " + velocidad + "\n");
-        hermano += ("fuerza: " + fuerza + "\n");
-
-        return hermano;
-    }
+ 
 
 }
