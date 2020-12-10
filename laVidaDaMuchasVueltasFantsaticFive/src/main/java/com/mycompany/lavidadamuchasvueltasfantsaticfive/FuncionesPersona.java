@@ -32,12 +32,22 @@ public class FuncionesPersona {
         java.util.Random aleatorio = new java.util.Random();
         String nombreSeleccionado = "";
         if (genero == true) {
-            String nombresHombre[] = {"Juan", "Carlos", "Luís", "Fernando",
+            String nombresHombre[] = {"Eustaquio", "Fernando", "Sepher", "Ali", "Mariano", "Pato", "Xerxes", "Antón", "Claudio", "Koldo", "Patricio",
+                "Alexios", "Manuel", "Rafael", "Mauricio", "Gregorio", "Íker", "Carlos", "Javier", "Francisco", "Nemesio", "Anselmo", "Miguel",
+                "Ignacio", "Oscar", "Alex", "Juan", "Lander", "Agustin", "Cesar", "Natxo", "Nacho", "Javier", "Jorge", "Pablo", "Guillermo",
+                "Pepe", "Gabriel", "Juan", "Francisco", "Franco", "Miguel", "Gonzalo", "Abrahán", "Luís", "Juan", "Rafael", "Alberto", "Raúl",
+                "Abel", "Antonio", "Enrique", "Jose", "Adrian", "Dario", "Mateo", "Luis", "Alejandro", "Leandro", "Enzo", "Paco", "Amador",
+                "Felix","Juan", "Carlos", "Luís", "Fernando",
                 "Sergio", "Cándido", "Germán", "Jesús", "Miguel", "Diego Armando"};
             nombreSeleccionado
                     = nombresHombre[aleatorio.nextInt(nombresHombre.length)];
         } else {
-            String nombresMujer[] = {"Ana", "María", "Manoli", "Rosalía",
+            String nombresMujer[] = {"Cristobalina", "Paca", "Presentación", "Sarai", "Antonia", "Loli", "Juani", "Olga", "Susana", "Ruth", "Eustaquia",
+                "Godofreda", "Josefina", "Ermerigilda", "Úrsula", "Angie", "Carla", "Isabel", "Marta", "Dolores", "Sonia", "Raquel", "Esther",
+                "Erika", "Patrocinio", "Luisa", "Natalia", "Almudena", "Laura", "Kassandra", "Violeta", "María", "Mery", "Susana", "Daniela",
+                "Juana", "Rebeca", "Eustaquia", "Herminia", "Sandra", "Lorena", "Maria", "Paula", "Ainhoa", "Mar", "Manoli", "Julia", "Rocio",
+                "Marina", "Arelis", "Blanca", "Celeste", "Lola", "Dolores", "Yolanda", "Noemí", "Nuria", "Carmen", "Sheila", "Lucia", "Alia",
+                "Alma", "Cristina", "Lucy", "Tamara", "Victoria","Ana", "María", "Manoli", "Rosalía",
                 "Isabel", "Marie", "Jennifer", "Teresa", "Martirio", "Amelie"};
             nombreSeleccionado
                     = nombresMujer[aleatorio.nextInt(nombresMujer.length)];
@@ -47,7 +57,12 @@ public class FuncionesPersona {
 
     public static String apellidoAleatorio() {
         java.util.Random aleatorio = new java.util.Random();
-        String apellidos[] = {"Gómez", "Martínez", "Rodríguez", "Felix",
+        String apellidos[] = {"Fernández", "De todos los santos", "Heredia", "Aguirre", "Del Piero", "Trump", "Obama", "Rajoy", "Pérez", "Reverte",
+            "Rojas", "Muñoz", "de la Rosa", "de la O", "Guiérrez", "Molina", "López", "Romero", "Franco", "Martínez", "Fernández", "Bas",
+            "Buttera", "Pajero", "Vega", "Guzmán", "Varo", "Páramos", "Pérez", "Vivo", "Piernas", "Moco", "Verde", "Pitagoras", "Pintor",
+            "Delgado", "Vietes", "Portero", "Pestaña", "Guerrero", "Sardà", "Reyes", "Callado", "Santisteban", "Rubio", "Flores",
+            "Enfriasopas", "Gallego", "Ventura", "Garcia", "Melero", "Morales", "Soldado", "Silva", "Hernández", "Ruiz", "Machís",
+            "Duarte", "Díaz", "Vico", "Montoro", "Sacacuernos", "Cermuzo", "Cancamusa","Gómez", "Martínez", "Rodríguez", "Felix",
             "Houellebecq", "Cervantes", "Turing", "Curie", "Zambrano", "Maradona", "Curie",
             "Pantoja", "Foster-Wallace", "Steinbeck"};
         String apellidoSeleccionado
