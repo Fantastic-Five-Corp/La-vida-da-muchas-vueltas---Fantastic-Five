@@ -5,6 +5,8 @@
  */
 package com.mycompany.lavidadamuchasvueltasfantsaticfive;
 
+import java.util.Scanner;
+
 /**
  *
  * @author FantasticFive Corp
@@ -30,6 +32,25 @@ public class NewMain {
         boolean vivoYo = true;
         boolean vivoMama = true;
         boolean vivoPapa = true;
+        
+        byte opcion;
+        Scanner sc = new Scanner (System.in);
+
+        
+            System.out.println("\nElige una opción:\n\t" + ""
+                    + "1 - Imprimir mi información\n\t"
+                    + "2 - Imprimir información de mi familia\n\t"
+                    + "3 - Hacer cosas\n\t"
+                    + "4 - Crecer\n\t"
+                    + "5 - Terminar(morir)\n\t"
+            );
+            do {
+                opcion = Byte.parseByte(sc.nextLine());
+                if (opcion < 1 || opcion > 6) {
+                    System.out.println("No es un número válido: Pon uno entre 1 y 6");
+                }
+            } while (opcion < 1 || opcion > 6);
+        
 
         String nombrePapa = FuncionesPersona.nombreAleatorio(generoPapa);
         String nombreMama = FuncionesPersona.nombreAleatorio(generoMama);
@@ -83,13 +104,13 @@ public class NewMain {
         for (byte i = 0; i < (numHermanos +1); i++) {
 
             if (i == 1) {
-                byte fuerzaMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
-                byte empatiaMaxHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
+                byte fuerzaHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
+                byte empatiaHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte sociabilidadHermano1
                         = FuncionesPersona.valorEstadisticaAleatorio();
                 byte inteligenciaHermano1
                         = FuncionesPersona.valorEstadisticaAleatorio();
-                byte velocidadMaxHermano1
+                byte velocidadHermano1
                         = FuncionesPersona.valorEstadisticaAleatorio();
                 byte edadHermano1 = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
                         (byte) 30);
@@ -102,13 +123,13 @@ public class NewMain {
             }
 
             if (i == 2) {
-                byte fuerzaMaxHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
-                byte empatiaMaxHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
+                byte fuerzaHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
+                byte empatiaHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte sociabilidadHermano2
                         = FuncionesPersona.valorEstadisticaAleatorio();
                 byte inteligenciaHermano2
                         = FuncionesPersona.valorEstadisticaAleatorio();
-                byte velocidadMaxHermano2
+                byte velocidadHermano2
                         = FuncionesPersona.valorEstadisticaAleatorio();
                 byte edadHermano2 = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
                         (byte) 30);
@@ -119,13 +140,13 @@ public class NewMain {
             }
 
             if (i == 3) {
-                byte fuerzaMaxHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
-                byte empatiaMaxHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
+                byte fuerzaHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
+                byte empatiaHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte sociabilidadHermano3
                         = FuncionesPersona.valorEstadisticaAleatorio();
                 byte inteligenciaHermano3
                         = FuncionesPersona.valorEstadisticaAleatorio();
-                byte velocidadMaxHermano3
+                byte velocidadHermano3
                         = FuncionesPersona.valorEstadisticaAleatorio();
                 byte edadHermano3 = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
                         (byte) 30);
@@ -149,5 +170,6 @@ public class NewMain {
 
         System.out.println(persona);
 
-    }
+    
+}
 }
