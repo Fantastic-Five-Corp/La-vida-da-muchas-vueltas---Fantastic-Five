@@ -32,8 +32,17 @@ public class NewMain {
         boolean vivoYo = true;
         boolean vivoMama = true;
         boolean vivoPapa = true;
-
         byte opcion;
+        byte empatiaMaxYo = 0;
+        byte sociabilidadMaxYo = 0;
+        byte inteligenciaMaxYo = 0;
+        byte fuerzaMaxYo = 0;
+        byte velocidadMaxYo = 0;
+        
+   
+      
+        
+      
 
         String nombrePapa = FuncionesPersona.nombreAleatorio(generoPapa);
         String nombreMama = FuncionesPersona.nombreAleatorio(generoMama);
@@ -41,19 +50,21 @@ public class NewMain {
                 + FuncionesPersona.apellidoAleatorio();
         String apellidosPapa = FuncionesPersona.apellidoAleatorio() + " "
                 + FuncionesPersona.apellidoAleatorio();
-        byte sociabilidadPapa
-                = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
-        byte empatiaPapa = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
+       
+        
         byte inteligenciaPapa
                 = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
         byte velocidadPapa
                 = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
         byte fuerzaPapa = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
-        byte edadPapa = FuncionesPersona.valorEstadisticaAleatorio((byte) 30,
-                (byte) 100);
         byte sociabilidadMama
                 = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
+         byte sociabilidadPapa
+                = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
+         
         byte empatiaMama = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
+        byte empatiaPapa = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
+   
         byte inteligenciaMama
                 = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
         byte velocidadMama
@@ -61,44 +72,42 @@ public class NewMain {
         byte fuerzaMama = FuncionesPersona.valorEstadisticaAleatorio((byte) 50);
         byte edadMama = FuncionesPersona.valorEstadisticaAleatorio((byte) 30,
                 (byte) 100);
+        byte edadPapa = FuncionesPersona.valorEstadisticaAleatorio((byte) 30,
+                (byte) 100);
+        
         
         
         
         if(fuerzaMama > fuerzaPapa) {
-        byte fuerzaMaxYo = FuncionesPersona.valorEstadisticaAleatorio((byte)fuerzaPapa, (byte) fuerzaMama);
+           fuerzaMaxYo = FuncionesPersona.valorEstadisticaAleatorio((byte)fuerzaPapa, (byte) fuerzaMama);
         }else{
-           byte fuerzaMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) fuerzaMama, (byte) fuerzaPapa);
+           fuerzaMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) fuerzaMama, (byte) fuerzaPapa);
         }
-        
+
         if (empatiaMama>empatiaPapa) {
-        byte empatiaMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) empatiaPapa, (byte) empatiaMama);
+         empatiaMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) empatiaPapa, (byte) empatiaMama);
         }else{ 
-        byte empatiaMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) empatiaMama, (byte) empatiaPapa);
+         empatiaMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) empatiaMama, (byte) empatiaPapa);
         }
         
         if (sociabilidadMama>sociabilidadPapa) {
-        byte sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) sociabilidadPapa, (byte) sociabilidadMama);
+         sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) sociabilidadPapa, (byte) sociabilidadMama);
         }else{ 
-        byte sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) sociabilidadMama, (byte) sociabilidadPapa);
+         sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) sociabilidadMama, (byte) sociabilidadPapa);
         }
         
         
           if (inteligenciaMama>inteligenciaPapa) {
-        byte inteligenciaMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) inteligenciaPapa, (byte) inteligenciaMama);
+          inteligenciaMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) inteligenciaPapa, (byte) inteligenciaMama);
         }else{ 
-        byte inteligenciaMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) inteligenciaMama, (byte) inteligenciaPapa);
+          inteligenciaMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) inteligenciaMama, (byte) inteligenciaPapa);
         }
         
           if (velocidadMama>velocidadPapa) {
-        byte velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) velocidadPapa, (byte) velocidadMama);
+         velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) velocidadPapa, (byte) velocidadMama);
         }else{ 
-        byte velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) velocidadMama, (byte) velocidadPapa);
+         velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio ((byte) velocidadMama, (byte) velocidadPapa);
         }
-        
-        
-        
-        
-   
         
         
         
@@ -112,14 +121,24 @@ public class NewMain {
                 (byte) 5);
         byte fuerzaYo = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
                 (byte) 5);
+        byte iniciativaYo =2;
         byte edadYo = 0;
 
         java.util.Random aleatorio = new java.util.Random();
         byte numHermanos = (byte) ((byte) aleatorio.nextInt(4) + 0);
+        String hermano1 = "";
+        String hermano2 = "";
+        String hermano3 = "";
+        byte edadHermano1 = 0;
+        byte edadHermano2 =0;
+        byte edadHermano3=0;
 
+        
         for (byte i = 0; i < (numHermanos + 1); i++) {
 
             if (i == 1) {
+                
+                Boolean generoHermano1 = FuncionesPersona.generoAleatorio();
                 byte fuerzaHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte empatiaHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte sociabilidadHermano1
@@ -128,17 +147,23 @@ public class NewMain {
                         = FuncionesPersona.valorEstadisticaAleatorio();
                 byte velocidadHermano1
                         = FuncionesPersona.valorEstadisticaAleatorio();
-                byte edadHermano1 = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
+               edadHermano1 = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
                         (byte) 30);
                 String apellidosHermano1 = apellidosPapa.substring(0,
                         apellidosPapa.indexOf(" ")) + " " + apellidosMama.substring(0,
                         apellidosMama.indexOf(" "));
                 String nombreHermano1
-                        = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
-
+                        = FuncionesPersona.nombreAleatorio((generoHermano1));
+                
+             hermano1 = FuncionesPersona.ImprimePersona(nombreHermano1, apellidosHermano1,
+                generoHermano1, sociabilidadHermano1, empatiaHermano1, inteligenciaHermano1, velocidadHermano1,
+                fuerzaHermano1, edadHermano1);
+                
             }
 
             if (i == 2) {
+                
+                Boolean generoHermano2 = FuncionesPersona.generoAleatorio();
                 byte fuerzaHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte empatiaHermano2 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte sociabilidadHermano2
@@ -147,15 +172,23 @@ public class NewMain {
                         = FuncionesPersona.valorEstadisticaAleatorio();
                 byte velocidadHermano2
                         = FuncionesPersona.valorEstadisticaAleatorio();
-                byte edadHermano2 = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
+                edadHermano2 = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
                         (byte) 30);
-                String apellidos2 = apellidosPapa.substring(0, apellidosPapa.indexOf("")) + " " + apellidosMama.substring(0, apellidosMama.indexOf(" "));
+                String apellidosHermano2 = apellidosPapa.substring(0,
+                        apellidosPapa.indexOf(" ")) + " " + apellidosMama.substring(0,
+                        apellidosMama.indexOf(" "));
                 String nombreHermano2
-                        = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
+                        = FuncionesPersona.nombreAleatorio((generoHermano2));
+                
+                hermano2 = FuncionesPersona.ImprimePersona(nombreHermano2, apellidosHermano2,
+                generoHermano2, sociabilidadHermano2, empatiaHermano2, inteligenciaHermano2, velocidadHermano2,
+                fuerzaHermano2, edadHermano2);
 
             }
 
             if (i == 3) {
+                
+                Boolean generoHermano3 = FuncionesPersona.generoAleatorio();
                 byte fuerzaHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte empatiaHermano3 = FuncionesPersona.valorEstadisticaAleatorio();
                 byte sociabilidadHermano3
@@ -164,14 +197,19 @@ public class NewMain {
                         = FuncionesPersona.valorEstadisticaAleatorio();
                 byte velocidadHermano3
                         = FuncionesPersona.valorEstadisticaAleatorio();
-                byte edadHermano3 = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
+                edadHermano3 = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
                         (byte) 30);
                 String apellidosHermano3 = apellidosPapa.substring(0,
                         apellidosPapa.indexOf(" ")) + " " + apellidosMama.substring(0,
                         apellidosMama.indexOf(" "));
                 String nombreHermano3
-                        = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
+                        = FuncionesPersona.nombreAleatorio((generoHermano3));
 
+                hermano3 = FuncionesPersona.ImprimePersona(nombreHermano3, apellidosHermano3,
+                generoHermano3, sociabilidadHermano3, empatiaHermano3, inteligenciaHermano3, velocidadHermano3,
+                fuerzaHermano3, edadHermano3);
+                
+                
             }
         }
 
@@ -182,9 +220,24 @@ public class NewMain {
                 generoYo, sociabilidadYo, empatiaYo, inteligenciaYo, velocidadYo,
                 fuerzaYo, edadYo);
         
+        
+        
+        
+        String papa = FuncionesPersona.ImprimePersona(nombrePapa, apellidosPapa,
+                generoPapa, sociabilidadPapa, empatiaPapa, inteligenciaPapa, velocidadPapa,
+                fuerzaPapa, edadPapa);
+         
+        String mama = FuncionesPersona.ImprimePersona(nombreMama, apellidosMama,
+                generoMama, sociabilidadMama, empatiaMama, inteligenciaMama, velocidadMama,
+                fuerzaMama, edadMama);
+        
+         
+        
        
-
-        Scanner sc = new Scanner(System.in);
+        
+        
+        
+          Scanner sc = new Scanner(System.in);
 
         System.out.println("\nElige una opción:\n\t" + ""
                 + "1 - Imprimir mi información\n\t"
@@ -193,15 +246,80 @@ public class NewMain {
                 + "4 - Crecer\n\t"
                 + "5 - Terminar(morir)\n\t"
         );
+        
         do {
             opcion = Byte.parseByte(sc.nextLine());
-            if (opcion < 1 || opcion > 6) {
+            if (opcion < 1 || opcion > 5) {
                 System.out.println("No es un número válido: Pon uno entre 1 y 5");
             }
         } while (opcion < 1 || opcion > 5);
+        
+        
+        
+         switch (opcion) {
+             
+             case 1: 
+                 System.out.println(persona);
+                 break;
+                 
+             case 2:
+                 System.out.println(mama);
+                 System.out.println(papa);
+                 
+                if (numHermanos == 1){
+                  System.out.println(hermano1);
+                 }
+                if (numHermanos == 2){
+                    System.out.println(hermano2);
+                }
+                if (numHermanos == 3){
+                    System.out.println(hermano3);
+                }
+                 break;
+                 
+             case 4: 
+                 
+                 edadYo = (byte) (edadYo+1);
+                 edadMama = (byte) (edadMama+1);
+                 edadPapa = (byte) (edadPapa+1);
+                 edadHermano1 = (byte) (edadYo+1);
+                 edadHermano2 = (byte) (edadYo+1);
+                 edadHermano3 = (byte) (edadYo+1);
+                 break;
+                 
+                 
+             case 5:
+                 System.out.println("☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠");
+                 System.out.println("Has muerto de coronavirus");
+                 System.out.println("GAME OVER");
+                 System.out.println("☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠");
 
-        System.out.println(persona);
+
+                 
+                 
+                         
+                         
+                 
+                    
+         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+
       
+
+        
+     
 
     }
 }

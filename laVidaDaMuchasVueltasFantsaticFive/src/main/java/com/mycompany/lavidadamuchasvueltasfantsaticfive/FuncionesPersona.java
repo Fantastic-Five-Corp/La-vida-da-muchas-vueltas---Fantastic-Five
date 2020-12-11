@@ -57,14 +57,14 @@ public class FuncionesPersona {
 
     public static String apellidoAleatorio() {
         java.util.Random aleatorio = new java.util.Random();
-        String apellidos[] = {"Fernández", "De todos los santos", "Heredia", "Aguirre", "Del Piero", "Trump", "Obama", "Rajoy", "Pérez", "Reverte",
+        String apellidos[] = {"Fernández", "Heredia", "Aguirre", "Del Piero", "Trump", "Obama", "Rajoy", "Pérez", "Reverte",
             "Rojas", "Muñoz", "de la Rosa", "de la O", "Guiérrez", "Molina", "López", "Romero", "Franco", "Martínez", "Fernández", "Bas",
-            "Buttera", "Pajero", "Vega", "Guzmán", "Varo", "Páramos", "Pérez", "Vivo", "Piernas", "Moco", "Verde", "Pitagoras", "Pintor",
+            "Buttera", "Pajero", "Vega", "Guzmán", "Varo", "Páramos", "Pérez", "Vivo", "Piernas", "Moco", "Verde", "Pitágoras", "Pintor",
             "Delgado", "Vietes", "Portero", "Pestaña", "Guerrero", "Sardà", "Reyes", "Callado", "Santisteban", "Rubio", "Flores",
             "Enfriasopas", "Gallego", "Ventura", "Garcia", "Melero", "Morales", "Soldado", "Silva", "Hernández", "Ruiz", "Machís",
             "Duarte", "Díaz", "Vico", "Montoro", "Sacacuernos", "Cermuzo", "Cancamusa","Gómez", "Martínez", "Rodríguez", "Felix",
             "Houellebecq", "Cervantes", "Turing", "Curie", "Zambrano", "Maradona", "Curie",
-            "Pantoja", "Foster-Wallace", "Steinbeck"};
+            "Pantoja", "Foster-Wallace", "Steinbeck", "Boni-Niklison"};
         String apellidoSeleccionado
                 = apellidos[aleatorio.nextInt(apellidos.length)];
         return apellidoSeleccionado;
@@ -84,14 +84,14 @@ public class FuncionesPersona {
         return (byte) (new Random().nextInt(max - min) + min);
     }
 
-    public static String ImprimePersona(String nombre, String apellidos,
-            boolean genero, byte sociabilidad, byte empatia, byte inteligencia, byte velocidad, byte fuerza, byte edadYo) {
+    public static String ImprimePersona(String nombre, String apellidosYo,
+            boolean genero, byte sociabilidad, byte empatia, byte inteligencia, byte velocidad, byte fuerza, byte edad) {
 
         String persona = "";
 
-        persona += (nombre + " " + apellidos + " " + ((genero
+        persona += (nombre + " " + apellidosYo + " " + ((genero
                 ? "(Hombre)" : "(Mujer)")) + "\n");
-        persona += ("Edad: " + edadYo);
+        persona += ("Edad: " + edad) + "\n";
         persona += "----------------\n";
         persona += ("Sociabilidad:" + sociabilidad + "\n");
         persona += ("Empatia: " + empatia + "\n");
