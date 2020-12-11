@@ -85,18 +85,19 @@ public class FuncionesPersona {
     }
 
     public static String ImprimePersona(String nombre, String apellidos,
-            boolean genero, int sociabilidad, int empatia, int inteligencia, int velocidad, int fuerza) {
+            boolean genero, byte sociabilidad, byte empatia, byte inteligencia, byte velocidad, byte fuerza, byte edadYo) {
 
         String persona = "";
 
         persona += (nombre + " " + apellidos + " " + ((genero
                 ? "(Hombre)" : "(Mujer)")) + "\n");
+        persona += ("Edad: " + edadYo);
         persona += "----------------\n";
         persona += ("Sociabilidad:" + sociabilidad + "\n");
-        persona += ("empatia: " + empatia + "\n");
-        persona += ("inteligencia: " + inteligencia + "\n");
-        persona += ("velocidad: " + velocidad + "\n");
-        persona += ("fuerza: " + fuerza + "\n");
+        persona += ("Empatia: " + empatia + "\n");
+        persona += ("Inteligencia: " + inteligencia + "\n");
+        persona += ("Velocidad: " + velocidad + "\n");
+        persona += ("Fuerza: " + fuerza + "\n");
 
         return persona;
     }

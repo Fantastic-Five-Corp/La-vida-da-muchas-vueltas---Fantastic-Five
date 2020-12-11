@@ -32,25 +32,8 @@ public class NewMain {
         boolean vivoYo = true;
         boolean vivoMama = true;
         boolean vivoPapa = true;
-        
-        byte opcion;
-        Scanner sc = new Scanner (System.in);
 
-        
-            System.out.println("\nElige una opción:\n\t" + ""
-                    + "1 - Imprimir mi información\n\t"
-                    + "2 - Imprimir información de mi familia\n\t"
-                    + "3 - Hacer cosas\n\t"
-                    + "4 - Crecer\n\t"
-                    + "5 - Terminar(morir)\n\t"
-            );
-            do {
-                opcion = Byte.parseByte(sc.nextLine());
-                if (opcion < 1 || opcion > 6) {
-                    System.out.println("No es un número válido: Pon uno entre 1 y 6");
-                }
-            } while (opcion < 1 || opcion > 6);
-        
+        byte opcion;
 
         String nombrePapa = FuncionesPersona.nombreAleatorio(generoPapa);
         String nombreMama = FuncionesPersona.nombreAleatorio(generoMama);
@@ -79,11 +62,11 @@ public class NewMain {
         byte edadMama = FuncionesPersona.valorEstadisticaAleatorio((byte) 30,
                 (byte) 100);
 
-        byte fuerzaMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
-        byte empatiaMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
-        byte sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
-        byte inteligenciaMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
-        byte velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
+        byte fuerzaMaxYo = FuncionesPersona.valorEstadisticaAleatorio(fuerzaMama, fuerzaPapa);
+        byte empatiaMaxYo = FuncionesPersona.valorEstadisticaAleatorio(empatiaMama, empatiaPapa);
+        byte sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio(sociabilidadMama, sociabilidadPapa);
+        byte inteligenciaMaxYo = FuncionesPersona.valorEstadisticaAleatorio(inteligenciaMama, inteligenciaPapa);
+        byte velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio(velocidadMama, velocidadPapa);
         byte sociabilidadYo = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
                 (byte) 5);
         byte empatiaYo = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
@@ -96,12 +79,10 @@ public class NewMain {
                 (byte) 5);
         byte edadYo = 0;
 
-
         java.util.Random aleatorio = new java.util.Random();
         byte numHermanos = (byte) ((byte) aleatorio.nextInt(4) + 0);
-        
 
-        for (byte i = 0; i < (numHermanos +1); i++) {
+        for (byte i = 0; i < (numHermanos + 1); i++) {
 
             if (i == 1) {
                 byte fuerzaHermano1 = FuncionesPersona.valorEstadisticaAleatorio();
@@ -119,7 +100,7 @@ public class NewMain {
                         apellidosMama.indexOf(" "));
                 String nombreHermano1
                         = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
-                
+
             }
 
             if (i == 2) {
@@ -136,7 +117,7 @@ public class NewMain {
                 String apellidos2 = apellidosPapa.substring(0, apellidosPapa.indexOf("")) + " " + apellidosMama.substring(0, apellidosMama.indexOf(" "));
                 String nombreHermano2
                         = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
-                
+
             }
 
             if (i == 3) {
@@ -155,7 +136,6 @@ public class NewMain {
                         apellidosMama.indexOf(" "));
                 String nombreHermano3
                         = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
-                                
 
             }
         }
@@ -166,10 +146,27 @@ public class NewMain {
         String apellidosYo = apellidosPapa.substring(0, apellidosPapa.indexOf("")) + " " + apellidosMama.substring(0, apellidosMama.indexOf(" "));
         String persona = FuncionesPersona.ImprimePersona(nombreYo, apellidosYo,
                 generoYo, sociabilidadMaxYo, empatiaMaxYo, inteligenciaMaxYo, velocidadMaxYo,
-                fuerzaMaxYo);
+                fuerzaMaxYo, edadYo);
+        
+       
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("\nElige una opción:\n\t" + ""
+                + "1 - Imprimir mi información\n\t"
+                + "2 - Imprimir información de mi familia\n\t"
+                + "3 - Hacer cosas\n\t"
+                + "4 - Crecer\n\t"
+                + "5 - Terminar(morir)\n\t"
+        );
+        do {
+            opcion = Byte.parseByte(sc.nextLine());
+            if (opcion < 1 || opcion > 6) {
+                System.out.println("No es un número válido: Pon uno entre 1 y 5");
+            }
+        } while (opcion < 1 || opcion > 5);
 
         System.out.println(persona);
 
-    
-}
+    }
 }
