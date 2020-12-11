@@ -201,7 +201,7 @@ public class NewMain {
         } while (opcion < 1 || opcion > 5);
 
         System.out.println(persona);
-        System.out.println(hermano);
+      
 
     }
 }
