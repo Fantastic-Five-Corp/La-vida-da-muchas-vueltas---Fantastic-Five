@@ -62,11 +62,11 @@ public class NewMain {
         byte edadMama = FuncionesPersona.valorEstadisticaAleatorio((byte) 30,
                 (byte) 100);
 
-        byte fuerzaMaxYo = FuncionesPersona.valorEstadisticaAleatorio(fuerzaMama, fuerzaPapa);
-        byte empatiaMaxYo = FuncionesPersona.valorEstadisticaAleatorio(empatiaMama, empatiaPapa);
-        byte sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio(sociabilidadMama, sociabilidadPapa);
-        byte inteligenciaMaxYo = FuncionesPersona.valorEstadisticaAleatorio(inteligenciaMama, inteligenciaPapa);
-        byte velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio(velocidadMama, velocidadPapa);
+        byte fuerzaMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
+        byte empatiaMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
+        byte sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
+        byte inteligenciaMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
+        byte velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio();
         byte sociabilidadYo = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
                 (byte) 5);
         byte empatiaYo = FuncionesPersona.valorEstadisticaAleatorio((byte) 0,
