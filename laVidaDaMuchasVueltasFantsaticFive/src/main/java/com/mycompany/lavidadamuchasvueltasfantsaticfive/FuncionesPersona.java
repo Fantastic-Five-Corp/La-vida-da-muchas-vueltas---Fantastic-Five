@@ -58,7 +58,7 @@ public class FuncionesPersona {
     public static String apellidoAleatorio() {
         java.util.Random aleatorio = new java.util.Random();
         String apellidos[] = {"Fernández", "Heredia", "Aguirre", "Del Piero", "Trump", "Obama", "Rajoy", "Pérez", "Reverte",
-            "Rojas", "Muñoz", "de la Rosa", "de la O", "Guiérrez", "Molina", "López", "Romero", "Franco", "Martínez", "Fernández", "Bas",
+            "Rojas", "Muñoz", "de-la-Rosa", "de-la-O", "Guiérrez", "Molina", "López", "Romero", "Franco", "Martínez", "Fernández", "Bas",
             "Buttera", "Pajero", "Vega", "Guzmán", "Varo", "Páramos", "Pérez", "Vivo", "Piernas", "Moco", "Verde", "Pitágoras", "Pintor",
             "Delgado", "Vietes", "Portero", "Pestaña", "Guerrero", "Sardà", "Reyes", "Callado", "Santisteban", "Rubio", "Flores",
             "Enfriasopas", "Gallego", "Ventura", "Garcia", "Melero", "Morales", "Soldado", "Silva", "Hernández", "Ruiz", "Machís",
