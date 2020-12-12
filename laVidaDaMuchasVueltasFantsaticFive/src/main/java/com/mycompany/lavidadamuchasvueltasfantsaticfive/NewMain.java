@@ -261,19 +261,19 @@ public class NewMain {
                         edadHermano2 = (byte) (edadHermano2 + 1);
                         edadHermano3 = (byte) (edadHermano3 + 1);
                         System.out.println(" ↑↑ Todos los personajes aumentan su edad en 1 AÑO ↑↑ ");
-                        System.out.println("Tú ahora tienes: " + " " + edadYo + " " + "años");
-                        System.out.println("Mamá ahora tiene: " + " " + edadMama + " " + "años");
-                        System.out.println("Papá ahora tiene: " + " " + edadPapa + " " + "años");
+                        System.out.println("Tú ahora tienes" + " " + edadYo + " " + "años");
+                        System.out.println("Mamá ahora tiene" + " " + edadMama + " " + "años");
+                        System.out.println("Papá ahora tiene" + " " + edadPapa + " " + "años");
                         
                         for (byte i = 0; i < (numHermanos +1) ; i++) {
                         if (i == 1) {
-                           System.out.println(nombreHermano1 + " " + "ahora tiene: " + " " + edadHermano1 + " " +"años");
+                           System.out.println(nombreHermano1 + " " + "ahora tiene" + " " + edadHermano1 + " " +"años");
                         }
                         if (i == 2) {
-                             System.out.println(nombreHermano2 + " " + "ahora tiene: " + " " + edadHermano2 + " " + "años");
+                             System.out.println(nombreHermano2 + " " + "ahora tiene" + " " + edadHermano2 + " " + "años");
                         }
                         if (i == 3) {
-                            System.out.println(nombreHermano3 + " " + "ahora tiene: " + " " + edadHermano3 + " " + "años");
+                            System.out.println(nombreHermano3 + " " + "ahora tiene" + " " + edadHermano3 + " " + "años");
                         }
                         }
                         
