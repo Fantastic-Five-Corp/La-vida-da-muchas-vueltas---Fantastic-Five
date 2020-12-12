@@ -38,6 +38,7 @@ public class NewMain {
         byte inteligenciaMaxYo = 0;
         byte fuerzaMaxYo = 0;
         byte velocidadMaxYo = 0;
+  
 
         String nombrePapa = FuncionesPersona.nombreAleatorio(generoPapa);
         String nombreMama = FuncionesPersona.nombreAleatorio(generoMama);
@@ -114,6 +115,7 @@ public class NewMain {
 
         java.util.Random aleatorio = new java.util.Random();
         byte numHermanos = (byte) ((byte) aleatorio.nextInt(4) + 0);
+        System.out.println(numHermanos + "numHermanos");
         String hermano1 = "";
         String hermano2 = "";
         String hermano3 = "";
@@ -242,16 +244,11 @@ public class NewMain {
                     case 2:
                         System.out.println(mama);
                         System.out.println(papa);
-
-                        if (numHermanos == 1) {
-                            System.out.println(hermano1);
-                        }
-                        if (numHermanos == 2) {
-                            System.out.println(hermano2);
-                        }
-                        if (numHermanos == 3) {
-                            System.out.println(hermano3);
-                        }
+                        System.out.println(hermano1);
+                        System.out.println(hermano2);
+                        System.out.println(hermano3);
+                        
+                        
                         break;
 
                     case 4:

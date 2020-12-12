@@ -84,12 +84,12 @@ public class FuncionesPersona {
         return (byte) (new Random().nextInt(max - min) + min);
     }
 
-    public static String ImprimePersona(String nombre, String apellidosYo,
+    public static String ImprimePersona(String nombre, String apellidos,
             boolean genero, byte sociabilidad, byte empatia, byte inteligencia, byte velocidad, byte fuerza, byte edad) {
 
         String persona = "";
 
-        persona += (nombre + " " + apellidosYo + " " + ((genero
+        persona += (nombre + " " + apellidos + " " + ((genero
                 ? "(Hombre)" : "(Mujer)")) + "\n");
         persona += ("Edad: " + edad) + "\n";
         persona += "----------------\n";
