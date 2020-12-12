@@ -206,7 +206,9 @@ public class NewMain {
 
         Boolean generoYo = FuncionesPersona.generoAleatorio();
         String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
-        String apellidosYo = apellidosPapa.substring(0, apellidosPapa.indexOf("")) + " " + apellidosMama.substring(0, apellidosMama.indexOf(" "));
+        String apellidosYo =  apellidosPapa.substring(0,
+                        apellidosPapa.indexOf(" ")) + " " + apellidosMama.substring(0,
+                        apellidosMama.indexOf(" "));
         String persona = FuncionesPersona.ImprimePersona(nombreYo, apellidosYo,
                 generoYo, sociabilidadYo, empatiaYo, inteligenciaYo, velocidadYo,
                 fuerzaYo, edadYo);
@@ -247,8 +249,7 @@ public class NewMain {
                         System.out.println(hermano1);
                         System.out.println(hermano2);
                         System.out.println(hermano3);
-                        
-                        
+
                         break;
 
                     case 4:
@@ -261,19 +262,21 @@ public class NewMain {
                         edadHermano3 = (byte) (edadHermano3 + 1);
                         System.out.println(" ↑↑ Todos los personajes aumentan su edad en 1 AÑO ↑↑ ");
                         System.out.println("Tú ahora tienes: " + " " + edadYo + " " + "años");
-                        System.out.println("Mama ahora tiene: " + " " + edadMama + " " + "años");
-                        System.out.println("Papa ahora tiene: " + " " + edadPapa + " " + "años");
+                        System.out.println("Mamá ahora tiene: " + " " + edadMama + " " + "años");
+                        System.out.println("Papá ahora tiene: " + " " + edadPapa + " " + "años");
                         
-                        
-                        if (numHermanos == 1) {
+                        for (byte i = 0; i < (numHermanos +1) ; i++) {
+                        if (i == 1) {
                            System.out.println(nombreHermano1 + " " + "ahora tiene: " + " " + edadHermano1 + " " +"años");
                         }
-                        if (numHermanos == 2) {
+                        if (i == 2) {
                              System.out.println(nombreHermano2 + " " + "ahora tiene: " + " " + edadHermano2 + " " + "años");
                         }
-                        if (numHermanos == 3) {
+                        if (i == 3) {
                             System.out.println(nombreHermano3 + " " + "ahora tiene: " + " " + edadHermano3 + " " + "años");
                         }
+                        }
+                        
                         break;
 
                     case 5:
