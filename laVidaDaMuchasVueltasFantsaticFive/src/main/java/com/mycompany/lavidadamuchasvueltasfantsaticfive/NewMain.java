@@ -126,7 +126,7 @@ public class NewMain {
         String nombreHermano2 = "";
         String nombreHermano3 = "";
 
-        for (byte i = 0; i < (numHermanos + 1); i++) {
+        for (byte i = 0; i <=numHermanos ; i++) {
 
             if (i == 1) {
 
@@ -265,7 +265,7 @@ public class NewMain {
                         System.out.println("Mamá ahora tiene" + " " + edadMama + " " + "años");
                         System.out.println("Papá ahora tiene" + " " + edadPapa + " " + "años");
                         
-                        for (byte i = 0; i < (numHermanos +1) ; i++) {
+                        for (byte i = 0; i <= numHermanos  ; i++) {
                         if (i == 1) {
                            System.out.println(nombreHermano1 + " " + "ahora tiene" + " " + edadHermano1 + " " +"años");
                         }
