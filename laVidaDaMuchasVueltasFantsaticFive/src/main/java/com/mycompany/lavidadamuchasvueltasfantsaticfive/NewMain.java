@@ -283,6 +283,8 @@ public class NewMain {
                         System.out.println("☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠");
                         System.out.println("☠☠☠☠☠☠GAME OVER☠☠☠☠☠☠");
                         System.out.println("☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠");
+                                                System.out.println("☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠");
+
                         break;
 
                 }
